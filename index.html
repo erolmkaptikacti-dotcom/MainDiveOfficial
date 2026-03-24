@@ -9,7 +9,8 @@
 <link rel="stylesheet" href="shared.css" />
 <style>
 .hero { min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; padding:0 6rem; position:relative; overflow:hidden; }
-.hero-bg { position:absolute; inset:0; background: linear-gradient(to right, rgba(10,9,7,0.92) 0%, rgba(10,9,7,0.75) 45%, rgba(10,9,7,0.45) 100%), url('newpzzza.PNG') center/cover no-repeat; }
+.hero-bg { position:absolute; inset:0; background: linear-gradient(to right, rgba(5,4,3,0.88) 0%, rgba(5,4,3,0.55) 45%, rgba(5,4,3,0.1) 100%), url('wood.PNG') center/cover no-repeat; }
+.hero-logo { position:absolute; right:8%; top:50%; transform:translateY(-50%); width:clamp(260px,28vw,400px); z-index:2; filter:drop-shadow(0 4px 24px rgba(0,0,0,0.5)); }
 .hero-lines { position:absolute; inset:0; pointer-events:none; }
 .hero-lines::before { content:''; position:absolute; top:0; left:50%; width:1px; height:100%; background:linear-gradient(to bottom,transparent,rgba(200,131,42,0.08),transparent); }
 .hero-eyebrow { font-size:0.7rem; letter-spacing:0.35em; text-transform:uppercase; color:var(--amber); margin-bottom:1.5rem; position:relative; z-index:2; animation:fadeUp 0.8s ease both; }
@@ -103,6 +104,7 @@
   </div>
   <div class="hero-scroll"><span class="scroll-line"></span>Scroll to explore</div>
   <div class="hero-badge"><div class="hero-badge-text">FISH FRY<br/>FRIDAY<br/>★<br/>OPEN<br/>LATE</div></div>
+  <img src="logo.png" class="hero-logo" alt="The Main Dive">
 </section>
 
 <div class="marquee-wrap"><div class="marquee-inner">
