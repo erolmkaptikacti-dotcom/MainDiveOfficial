@@ -25,6 +25,7 @@
 .hero-badge { position:absolute; right:6rem; bottom:4rem; width:11rem; height:11rem; border:1px solid rgba(200,131,42,0.3); border-radius:50%; display:flex; align-items:center; justify-content:center; z-index:2; animation:spin 20s linear infinite; }
 .hero-badge-text { font-family:'Bebas Neue',sans-serif; font-size:0.95rem; letter-spacing:0.25em; color:var(--amber); line-height:1.8; animation:spinReverse 20s linear infinite; text-align:center; }
 @keyframes spin{to{transform:rotate(360deg)}} @keyframes spinReverse{to{transform:rotate(-360deg)}}
+.hero-logo-img { position:absolute; right:0; top:50%; transform:translateY(-50%); width:48vw; max-width:720px; z-index:2; pointer-events:none; opacity:0.97; }
 
 .about { padding:7rem 6rem; display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; background:var(--dark); }
 .about-body { margin-top:2rem; font-size:1.05rem; line-height:1.9; color:var(--offwhite); }
@@ -70,7 +71,7 @@
 .cta-actions { display:flex; gap:1.2rem; justify-content:center; flex-wrap:wrap; }
 
 @media(max-width:900px){
-  .hero{padding:0 2rem;} .hero-badge,.hero-scroll{display:none;}
+  .hero{padding:0 2rem;} .hero-badge,.hero-scroll{display:none;} .hero-logo-img{width:90vw; position:relative; right:auto; top:auto; transform:none; margin-top:2rem; align-self:center;}
   .about{grid-template-columns:1fr; padding:4rem 2rem; gap:3rem;}
   .quick-hits{grid-template-columns:1fr 1fr;}
   .reviews{padding:4rem 2rem;} .reviews-grid{grid-template-columns:1fr;}
@@ -102,7 +103,7 @@
     <a href="visit.html" class="btn-ghost">Find Us</a>
   </div>
   <div class="hero-scroll"><span class="scroll-line"></span>Scroll to explore</div>
-  <div class="hero-badge"><div class="hero-badge-text">FISH FRY<br/>FRIDAY<br/>★<br/>OPEN<br/>LATE</div></div>
+  <img src="maindive_logo_transparent.png" class="hero-logo-img" alt="The Main Dive — Webster, NY" />
 </section>
 
 <div class="marquee-wrap"><div class="marquee-inner">
